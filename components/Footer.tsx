@@ -11,8 +11,10 @@ const FooterColumn = ({ title, links }: ColumnProps) => (
   <div className="footer_column">
     <h4 className="font-semibold">{title}</h4>
     <ul className="flex flex-col gap-2 font-normal">
-      {links.map((link) => (
-        <Link href={"/"}>{link}</Link>
+      {links.map((link, i) => (
+        <Link href={"/"} key={i}>
+          {link}
+        </Link>
       ))}
     </ul>
   </div>
@@ -72,9 +74,8 @@ const Footer = () => {
       <div className="flexBetween footer_copyright">
         <p>@ 2023 Flexible. All right reserved</p>
         <p className="text-gray">
-          <span className="text-black font-semibold">
-            10,214
-          </span> project submitted
+          <span className="text-black font-semibold">10,214</span> project
+          submitted
         </p>
       </div>
     </footer>
