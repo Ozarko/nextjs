@@ -1,6 +1,3 @@
-Here's the `README.md` file for the Next.js project created with the help of the tutorial available at [https://www.youtube.com/watch?v=986hztrfaSQ&t=12951s](https://www.youtube.com/watch?v=986hztrfaSQ&t=12951s):
-
-```markdown
 # Next.js Project Tutorial
 
 This repository contains a Next.js project created based on the tutorial available at [https://www.youtube.com/watch?v=986hztrfaSQ&t=12951s](https://www.youtube.com/watch?v=986hztrfaSQ&t=12951s). The tutorial covers the fundamentals of setting up and building a web application using Next.js.
@@ -34,22 +31,24 @@ To get the project up and running, follow these steps:
 
 3. Install the required dependencies using npm or yarn:
    ```
-   npm run dev
+   npm install
    # or
-   yarn run dev
+   yarn install
    ```
 
 ## Usage
 
-After completing the installation steps, you can start the development server by running the following command:
+After completing the installation steps, you can start the project by running the following command:
 
 ```bash
-npm run dev
+npm run start-graf && npm run dev
 # or
-yarn dev
+yarn start-graf && yarn dev
 ```
 
-This will start the development server, and you can access the application by visiting [http://localhost:3000](http://localhost:3000) in your web browser.
+This will execute both commands sequentially. The first command, `npm run start-graf`, is responsible for some initial setup or configurations, and the second command, `npm run dev`, will start the development server for your Next.js project.
+
+You can then access the application by visiting [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ## Features
 
@@ -69,6 +68,5 @@ If you encounter any issues with the project or want to contribute to its improv
 ## License
 
 The code in this project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the terms of the license.
-```
 
-Please replace `<repository_url>` with the actual URL of the repository where your Next.js project is hosted. This `README.md` file provides essential information about your Next.js project, its purpose, and how others can set it up and contribute to it. Feel free to customize it further based on your specific project requirements.
+Please replace `<repository_url>` with the actual URL of the repository where your Next.js project is hosted. This `README.md` file provides essential information about your Next.js project, its purpose, and how others can set it up and contribute to it. Customize it further based on your specific project requirements.
