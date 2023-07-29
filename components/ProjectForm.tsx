@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import FormField from "./FormField";
 import Button from "./Button";
 import CustomMenu from "./CustomMenu";
-import {  createNewProject, fetchToken } from "@/lib/actions";
+import {  createNewProject, fetchToken, updateProject } from "@/lib/actions";
 import { FormState, ProjectInterface, SessionInterface } from "@/common.types";
 import { categoryFilters } from "@/constants";
 
@@ -72,11 +72,11 @@ const ProjectForm = ({ type, session, project }: Props) => {
         router.push("/");
       }
 
-      // if (type === "edit") {
-      //   await updateProject(form, project?.id as string, token);
+      if (type === "edit") {
+        await updateProject(form, project?.id as string, token);
 
-      //   router.push("/");
-      // }
+        router.push("/");
+      }
     } catch (error) {
       alert(
         `Failed to ${
